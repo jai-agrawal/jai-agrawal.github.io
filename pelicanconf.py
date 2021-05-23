@@ -5,6 +5,8 @@ AUTHOR = 'Jai Agrawal'
 SITENAME = "Jai's Blog"
 SITEURL = ''
 
+THEME = 'themes/dev-random'
+OUTPUT_PATH = 'output'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Calcutta'
