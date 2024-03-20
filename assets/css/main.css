@@ -786,24 +786,6 @@ input, select, textarea {
 		margin: auto; /* Centering */
 	}
 
-	/* Adjustments for smaller screens */
-	@media only screen and (max-width: 768px) {
-		.responsive-iframe {
-			width: 95vw;
-			height: auto; /* Let the height be automatic to maintain aspect ratio */
-			min-height: 50vh; /* Ensure it's not too small */
-		}
-	}
-
-	/* Further adjustments for portrait orientation */
-	@media only screen and (orientation: portrait) {
-		.responsive-iframe {
-			height: 60vh;
-			width: auto;
-		}
-	}
-
-
 /* Actions */
 
 	ul.actions {
