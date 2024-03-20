@@ -771,6 +771,21 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
+/* Custom Styles */
+	.iframe-container {
+		display: flex; /* Use flexbox to center the iframe */
+		justify-content: center; /* Center horizontally */
+		align-items: center; /* Center vertically */
+		height: 80vh; /* Adjust height as necessary */
+		margin: auto; /* Center the container itself if needed */
+	}
+
+	.responsive-iframe {
+		width: 80vw; /* Adjust width as necessary */
+		height: 100%; /* Make the iframe fill the container */
+		border: none; /* Optional: removes the border */
+	}
+
 /* Actions */
 
 	ul.actions {
@@ -1140,9 +1155,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
