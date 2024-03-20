@@ -771,20 +771,36 @@ input, select, textarea {
 			margin-left: 2rem;
 		}
 
-/* Custom Styles */
+/* Base styles */
 	.iframe-container {
-		display: flex; /* Use flexbox to center the iframe */
-		justify-content: center; /* Center horizontally */
-		align-items: center; /* Center vertically */
-		height: 80vh; /* Adjust height as necessary */
-		margin: auto; /* Center the container itself if needed */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden; /* Prevents content from spilling out */
 	}
 
 	.responsive-iframe {
-		width: 80vw; /* Adjust width as necessary */
-		height: 100%; /* Make the iframe fill the container */
-		border: none; /* Optional: removes the border */
+		width: 80vw;
+		height: 80vh; /* Adjust based on the aspect ratio of your content */
+		border: none;
+		margin: auto; /* Centering */
 	}
+
+	/* Adjustments for smaller screens */
+	@media only screen and (max-width: 600px) {
+		.responsive-iframe {
+			width: 90vw;
+			height: 50vh;
+		}
+	}
+
+	/* Further adjustments for portrait orientation */
+	@media only screen and (orientation: portrait) {
+		.responsive-iframe {
+			height: 60vh;
+		}
+	}
+
 
 /* Actions */
 
